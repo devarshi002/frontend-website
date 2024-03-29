@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: flex-start;
+    /* background-color: red; */
+    height: 12vh;
+    padding: 2vw 10.4vw;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.nav-part2{
+    display: flex;
+    gap: 2vw;
+    align-items: flex-start;
+    padding: 1vh 0;
+    position: relative;
+    z-index: 10;
+}
+
+.nav-part2 h5{
+    margin-bottom: 1vw;
+    /* background-color: aqua; */
+    display: none;
+    overflow: hidden;
+}
+.nav-part2 h5 span{
+    font-size: 0.77vw;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.nav-part2 h4{
+    font-size: 0.76vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2.6vw;
+}
+
+nav:hover #nav-bottom{
+    /* opacity: 1; */
+    height: 180%;
+    bottom: -180%;
+    background-color: #111;
+}
+
+#nav-bottom{
+    width: 80%;
+    height: 0vh;
+    position: absolute;
+    background-color: #111;
+    top: 100%;
+    z-index: 9;
+    border-bottom: 1px solid mediumspringgreen;
+}
+.Bottom-div{
+    margin-top: 2vw;
+    
+    overflow: hidden;
+}
+.Bottom-div h5{
+    overflow: hidden;
+    margin-bottom: 0.4vw;
+    
+}
+.Bottom-div h5 span{
+    font-weight: 500;
+    display: inline-block;
+    font-size: 0.75vw;
+    opacity: 0;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page1 h1{
+    font-size: 8.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 8.5vw;
+}
+#page1 h1 svg{
+    height: 6vw;
+    width: 6vw;
+    background-color: rgb(255, 106, 0);
+    border-radius: 50%;
+}
+
+nav button{
+    background-color: rgb(255, 106, 0);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1vw;
+    font-weight: 700;
+}
+
+nav button svg{
+    height: 1vw;
+    margin-left: 1.68vw;
+}
+
+#page1 p{
+    text-align: center;
+    font-weight: 400;
+    margin-top: 3vh;
+}
+
+#page1-something{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#page1-something h4{
+    font-weight: 400;
+    font-size: 1vw;
+    text-transform: lowercase;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border: 1px solid snow;
+    border-radius: 50px;
+    
+}
+
+#page1-something h4:nth-last-child(2){
+    border: none;
+    padding: 2px;
+}
+
+#moving-div{
+    /* background-color: rebeccapurple; */
+    margin-top: 10vh;
+    position: absolute;
+    bottom: 3%;
+    white-space: nowrap;
+    padding: 1.2vw;
+    overflow: hidden;
+    width: 50%;
+    
+}
+
+#moving-div .move{
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 9s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-div .move img{
+    height: 1vw ;
+    margin: 0 1.2vw;
+}
+
+@keyframes mobe{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+#blur-left{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to left, transparent, #ff7809);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-bottom-left-radius:10px ;
+    border-top-left-radius: 10px;
+
+}
+
+#blur-right{
+    height: 100%;
+    width: 20%;
+    background: linear-gradient(to right, transparent, #ff5e00);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    border-bottom-right-radius:10px ;
+    border-top-right-radius: 10px;
+}
+
+
+
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
+}
