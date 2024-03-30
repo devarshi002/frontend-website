@@ -463,3 +463,171 @@ nav button svg{
     opacity: 0;
     transition: opacity ease 0.3s;
 }
+
+#page6{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #111;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5vh 10.5vw;
+}
+
+#page6 button{
+    background-color: #ff7809;
+    padding: 1vw 2.5vw;
+    font-size: 1vw;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    position: sticky;
+    top: 15%;
+}
+
+#page6-right{
+    width: 70%;
+}
+
+#page6-right>p{
+    font-size: 2.1vw;
+}
+
+#page6-right>p span{
+    display: inline-block;
+    width: 15vw;
+}
+
+#page6-content{
+    width: 100%;
+    /* background-color: #ff5e00; */
+    margin-top: 5vh;
+    padding: 5vh 0;
+}
+
+#page6-content>h1{
+    font-size: 3vw;
+}
+
+#page6-content #flex{
+    display: flex;
+    gap: 5px;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+}
+
+#page6-content #flex h4{
+    
+    border-radius: 50px;
+    border: 1px solid #ff7809;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 0.8vw;
+
+}
+
+
+.page6-elem{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 3vh;
+    padding-bottom: 8vh;
+    /* background-color: #ff5e00; */
+    border-top: 2px solid #ff5e00;
+    position: relative;
+    overflow: hidden;
+}
+
+.page6-elem p{
+    width: 60%;
+    position: relative;
+    z-index: 8;
+}
+
+.page6-elem h3{
+    font-size: 1.5vw;
+    font-weight: 400;
+    position: relative;
+    z-index: 8;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+}
+
+.page6-elem i{
+    font-size: 1vw;
+    position: relative;
+    z-index: 8;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+
+}
+
+.over{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ff5e00;
+    top: 0;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+
+.page6-elem:hover h3{
+    padding-left: 1vw;
+}
+
+.page6-elem:hover i{
+    padding-right: 1vw;
+}
+
+.page6-elem:hover .over{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+summary::marker{
+    content: "";
+}
+
+.uiux{
+    border-top: 2px solid #5eff00;
+    padding: 3vh 0;
+}
+
+.product{
+    border-top: 2px solid #5eff00;
+    padding: 3vh 0;
+
+}
+
+
+/* page 7 */
+
+#page7{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+    padding: 10vh 10vw;
+}
+
+#page7 h1{
+    color: #ffffff;
+    padding-left: 23vw;
+    padding-right: 5vw;
+    line-height: 5.5vw;
+    font-size: 5.5vw;
+    padding-bottom: 10vh;
+    border-bottom: 1px solid #dadada;
+}
+
+#page7-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#page7-content #right-7{
+    width: 60%;
+}
