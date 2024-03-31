@@ -93,6 +93,7 @@ nav:hover #nav-bottom{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 #page1 h1{
@@ -520,7 +521,7 @@ nav button svg{
 #page6-content #flex h4{
     
     border-radius: 50px;
-    border: 1px solid #ff7809;
+    border: 1px solid #ff5e00;
     padding: 10px 20px;
     font-weight: 400;
     font-size: 0.8vw;
@@ -606,9 +607,9 @@ summary::marker{
 /* page 7 */
 
 #page7{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
-    background-color: #000000;
+    background-color: #111;
     padding: 10vh 10vw;
 }
 
@@ -626,8 +627,174 @@ summary::marker{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    padding: 8vh 0;
 }
 
 #page7-content #right-7{
-    width: 60%;
+    width: 70%;
+}
+
+#page7-content #right-7 p{
+    font-size: 1.5vw;
+    color: #ffffff;
+    margin-bottom: 5vh;
+    width: 80%;
+    
+}
+
+#blue-btn{
+    background-color: #ff7809;
+    width: 15vw;
+    height: 3.5vw;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#blue-btn h4{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 0.8vw;
+    font-weight: 600;
+}
+
+#blue-btn h4 i{
+    font-size: 1vw;
+    font-weight: 100;
+    margin-left: 0.5vw;
+}
+
+
+#page7-bottom{
+    height: 40vh;
+    width: 100%;
+    /* background-color: #ff5e00; */
+    border-top: 1px solid #ff5e00;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#btm7-part1{
+    border-right: 1px solid #333;
+    width: 30%;
+    height: 100%;
+}
+
+#btm7-part2{
+    border-right: 1px solid #333;
+    width: 28%;
+    height: 100%;
+}
+#btm7-part3{
+    border-right: 1px solid #333;
+    width: 20%;
+    height: 100%;
+}
+
+#btm7-part4{
+    border-right: 1px solid #333;
+    width: 20%;
+    height: 100%;
+}
+
+#btm7-part5{
+    width: 5%;
+    height: 100%;
+}
+
+.btm7-parts{
+    padding: 3vh 0.6vw;
+}
+
+.btm7-parts h5{
+    font-weight: 500;
+    font-size: 0.85vw;
+    margin-bottom: 4vh;
+}
+
+.btm7-parts h4{
+    color: #000;
+    background-color: #ff7809;
+    width: 70%;
+    padding: 5px 10px;
+    margin-bottom: 0.3vh;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 0.9vw;
+}
+
+.btm7-parts h4 span{
+    background-color: transparent;
+    padding: 0.5vw ;
+    border-radius: 50%;
+    border: 1px solid rgb(102, 46, 4);
+    width: 1.5vw;
+    height: 1.5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1vw;
+}
+
+#btm7-part2 h4:nth-child(2){
+    transform: translateX(0);
+}
+
+#btm7-part2 h4:nth-child(3){
+    transform: translateX(10%);
+}
+
+#btm7-part2 h4:nth-child(4){
+    transform: translateX(20%);
+}
+
+#btm7-part2 h4:nth-child(5){
+    transform: translateX(30%);
+}
+
+#btm7-part2 h4:nth-child(6){
+    transform: translateX(40%);
+}
+
+#btm7-part2 h4:nth-child(7){
+    transform: translateX(50%);
+}
+
+
+
+#btm7-part3 h4:nth-child(2) {
+    /* opacity: 0; Initially hide the elements */
+    transform: translateX(20%); /* Move the elements down */
+}
+
+#btm7-part3 h4:nth-child(3) {
+    /* opacity: 0; Initially hide the elements */
+    transform: translateX(40%); /* Move the elements down */
+}
+
+#btm7-part4 h4:nth-child(2) {
+    /* opacity: 0; Initially hide the elements */
+    transform: translateX(20%); /* Move the elements down */
+}
+
+#btm7-part4 h4:nth-child(3) {
+    /* opacity: 0; Initially hide the elements */
+    transform: translateX(30%); /* Move the elements down */
+}
+
+#btm7-part4 h4:nth-child(4) {
+    /* opacity: 0; Initially hide the elements */
+    transform: translateX(40%); /* Move the elements down */
+}
+
+
+/* page 8 */
+#page8{
+    height: 100vh;
+    width: 100%;
+    background-color: #111;
 }
